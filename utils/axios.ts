@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: "http://localhost:1337/parse"
+    baseURL: process.env.REACT_APP_API_URL
 });
 
 instance.defaults.headers.common['X-Parse-Application-Id'] = "voosce";
